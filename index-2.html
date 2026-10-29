@@ -14,8 +14,7 @@
     section{padding:86px 0}.section-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.18em;color:#9b7b43;font-weight:800}.section-title{font:700 clamp(2rem,3.5vw,3rem)/1.2 Georgia,serif;color:var(--navy);margin:10px 0 20px}.section-intro{max-width:770px;color:var(--muted);margin-bottom:32px}.about{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:start}.about p{color:#526075}.fact-list{background:#fff;border:1px solid var(--border);border-radius:12px;padding:28px}.fact{padding:13px 0;border-bottom:1px solid var(--border)}.fact:last-child{border:0}.fact strong{display:block;font-size:.78rem;color:#9b7b43;text-transform:uppercase;letter-spacing:.1em}.fact span{font-weight:600;color:var(--navy)}
     .light{background:#fff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{border:1px solid var(--border);background:#fff;border-radius:12px;padding:26px;box-shadow:0 8px 26px #13244108}.card h3{color:var(--navy);margin:5px 0 10px;font-size:1.15rem}.card p{color:var(--muted);font-size:.94rem;margin:0}.card .number{font:700 2rem Georgia,serif;color:#b99758}.card .tag{display:inline-block;font-size:.75rem;font-weight:700;color:#8a6f41;background:#f8f1e3;border-radius:4px;padding:4px 10px;margin-bottom:10px}
     .gallery-controls{display:flex;gap:10px;flex-wrap:wrap;margin:26px 0}.filter{padding:8px 16px;border:1px solid #d8dce1;background:#fff;color:var(--navy);border-radius:50px;cursor:pointer}.filter.active,.filter:hover{background:var(--navy);color:#fff;border-color:var(--navy)}.gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.certificate{border:1px solid var(--border);background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 4px 22px #1324410a}.cert-preview{position:relative;height:218px;background:linear-gradient(145deg,#e9e6de,#f6f4ef);display:grid;place-items:center;cursor:pointer;border:0;padding:0;width:100%;color:var(--navy)}.cert-preview img{width:100%;height:100%;object-fit:contain;display:none}.cert-placeholder{display:grid;place-items:center;text-align:center;padding:20px;color:#8b8e98}.cert-placeholder .symbol{font-size:2.2rem;color:#ba985d}.cert-info{padding:19px}.cert-info small{color:#9b7b43;letter-spacing:.07em;text-transform:uppercase;font-weight:800}.cert-info h3{font-size:1rem;margin:7px 0;color:var(--navy);line-height:1.4}.cert-info p{font-size:.84rem;color:var(--muted);margin:0}.certificate[hidden]{display:none}
-        .pdf-preview{height:218px;background:linear-gradient(145deg,#e9e6de,#f6f4ef);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:18px;border-bottom:1px solid var(--border)}.pdf-preview p{margin:0;color:var(--muted);font-size:.88rem}.pdf-badge{display:grid;place-items:center;width:58px;height:68px;border:1px solid #bda77f;color:#9b7b43;font-weight:800;letter-spacing:.08em}.pdf-preview a{display:inline-block;background:var(--navy);color:#fff;border-radius:4px;padding:7px 12px;font-size:.82rem}.pdf-preview a:hover{background:var(--navy2)}
-.contact{background:var(--navy);color:#fff;text-align:center}.contact .section-title{color:#fff}.contact p{max-width:620px;margin:0 auto 26px;color:#cbd4e0}.footer{background:#081429;color:#bac5d5;text-align:center;padding:23px;font-size:.85rem}
+    .contact{background:var(--navy);color:#fff;text-align:center}.contact .section-title{color:#fff}.contact p{max-width:620px;margin:0 auto 26px;color:#cbd4e0}.footer{background:#081429;color:#bac5d5;text-align:center;padding:23px;font-size:.85rem}
     .modal{position:fixed;inset:0;z-index:100;background:#050b15ed;display:none;align-items:center;justify-content:center;padding:70px 18px 20px}.modal.open{display:flex}.modal img{max-width:100%;max-height:100%;object-fit:contain;background:white}.modal-close{position:absolute;top:17px;right:20px;color:#fff;border:1px solid #fff8;background:#1a2c46;padding:7px 16px;border-radius:6px;cursor:pointer}.modal-note{color:#fff;text-align:center}.hidden{display:none!important}
     @media(max-width:850px){.hero-grid,.about{grid-template-columns:1fr}.hero{padding:65px 0}.hero-grid{gap:35px}.portrait{max-width:270px}.cards,.gallery{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:580px){.nav{align-items:flex-start;flex-direction:column;padding:15px 0;gap:10px}.navlinks{gap:15px;font-size:.78rem}.hero{padding:45px 0 60px}section{padding:62px 0}.cards,.gallery{grid-template-columns:1fr}.cert-preview{height:240px}.container{padding:0 18px}}
@@ -30,18 +29,16 @@
 <body>
 <!--
 AZIZA PORTFOLIO: SINGLE-FILE WEBSITE
-Keep index.html and the following files together in the repository's root folder.
-Artwork image files used by this page:
-  plaster head.jpg, plaster head of apollo.jpg, drapery.jpg,
-  plaster cast head.jpg, voltaire.jpg, double portrait.jpg,
-  he admires.jpg, cropped composition.jpg, a night.jpg,
-  reunion.jpg, apples.jpg
-Artist portrait: aziza_image.img
-PDF documents: designer.pdf, aziza1.pdf, aziza3.pdf, aziza4.pdf, aziza5.pdf, aziza6.pdf
-Also in the repository: aziza2.img (not assigned because its purpose is unclear from the filename)
-Keep filenames and capitalization exactly as shown in GitHub. Filenames with spaces are URL-encoded below.
-Images that fail to load leave a placeholder. If aziza_image.img is not recognized by the browser, rename it to its real image extension (for example .jpg or .png) and update the portrait src.
-Set CONTACT_EMAIL only after Aziza's contact address is confirmed.
+Keep this file named index.html. Add an images folder next to it containing:
+  aziza.jpg (portrait)
+  artwork-01.jpg ... artwork-11.jpg (in the supplied order)
+  certificate-01.jpg ... certificate-05.jpg (in the displayed order)
+If an image uses a different extension, edit its src below.
+Missing images show intentional placeholders. No images are embedded or invented.
+Set CONTACT_EMAIL in the script only after Aziza's contact address is confirmed.
+Certificate wording can be refined when the original documents are available.
+“Master artist” has NOT been interpreted as a master's degree or GKS graduate track.
+Artwork 08's pencil grade 2HB and artwork 11's dimensions without units are retained as supplied.
 -->
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="topbar"><nav class="nav container" aria-label="Main navigation">
@@ -56,7 +53,7 @@ Set CONTACT_EMAIL only after Aziza's contact address is confirmed.
 <span class="pill">Artist · GKS Scholarship Candidate</span>
 <div class="actions"><a class="btn" href="#artworks">Explore My Artworks ↓</a><a class="btn btn-outline" href="#certificates">Awards &amp; Certificates ↗</a></div>
 </div><div class="portrait" aria-label="Artist portrait">
-<img src="./aziza_image.img" alt="Portrait of Jovburieva Aziza Gayrat Kizi" hidden>
+<img src="aziza_image.img" alt="Portrait of Jovburieva Aziza Gayrat Kizi" hidden>
 <div class="placeholder"><span class="symbol" aria-hidden="true">◯</span><strong>Aziza Jovburieva</strong><div>Artist portrait forthcoming</div></div>
 </div></div></section>
 <section id="about"><div class="container about"><div>
@@ -88,95 +85,111 @@ Set CONTACT_EMAIL only after Aziza's contact address is confirmed.
 <button class="filter" type="button" data-filter="graphite" aria-pressed="false">Graphite (7)</button>
 <button class="filter" type="button" data-filter="illustration" aria-pressed="false">Illustrations (3)</button>
 <button class="filter" type="button" data-filter="painting" aria-pressed="false">Painting (1)</button>
-</div><div class="art-grid"><!-- ARTWORK 01: plaster head.jpg -->
+</div><div class="art-grid"><!-- ARTWORK 01: place images/artwork-01.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 <figure class="artwork" data-category="graphite">
 <button class="media-preview" type="button" disabled aria-label="View Plaster Head of Laocoön">
-<img src="./plaster%20head.jpg" alt="Plaster Head of Laocoön" loading="lazy" decoding="async" hidden>
+<img src="./plaster head.jpg" alt="Plaster Head of Laocoön" loading="lazy" decoding="async" hidden>
 <span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 01</strong><small>Image forthcoming</small></span>
 <span class="view-label" aria-hidden="true">View image ↗</span></button>
 <figcaption><div class="work-meta"><span>NO. 01 / graphite</span><span>2023</span></div><h3>Plaster Head of Laocoön</h3><p>Plaster head of Laocoön. Graphite pencil (2H, HB, 2B, Sonet), paper, A3. 2023.</p></figcaption></figure>
-<!-- ARTWORK 02: plaster head of apollo.jpg -->
+<!-- ARTWORK 02: place images/artwork-02.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 <figure class="artwork" data-category="graphite">
 <button class="media-preview" type="button" disabled aria-label="View Apollo’s Head">
-<img src="./plaster%20head%20of%20apollo.jpg" alt="Apollo’s Head" loading="lazy" decoding="async" hidden>
+<img src="plaster head of apollo.jpg" alt="Apollo’s Head" loading="lazy" decoding="async" hidden>
 <span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 02</strong><small>Image forthcoming</small></span>
 <span class="view-label" aria-hidden="true">View image ↗</span></button>
 <figcaption><div class="work-meta"><span>NO. 02 / graphite</span><span>2020</span></div><h3>Apollo’s Head</h3><p>Plaster cast of Apollo&#x27;s head. Graphite pencil (2H, HB, 2B, Sonet) on paper, A3. 2020.</p></figcaption></figure>
-<!-- ARTWORK 03: drapery.jpg -->
+<!-- ARTWORK 03: place images/artwork-03.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 <figure class="artwork" data-category="graphite">
 <button class="media-preview" type="button" disabled aria-label="View Head &amp; Drapery">
-<img src="./drapery.jpg" alt="Head &amp; Drapery" loading="lazy" decoding="async" hidden>
+<img src="drapery.jpg" alt="Head &amp; Drapery" loading="lazy" decoding="async" hidden>
 <span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 03</strong><small>Image forthcoming</small></span>
 <span class="view-label" aria-hidden="true">View image ↗</span></button>
 <figcaption><div class="work-meta"><span>NO. 03 / graphite</span><span>2020</span></div><h3>Head &amp; Drapery</h3><p>Plaster cast head, still life with drapery. Graphite pencil (2H, HB, 2B, Sonet) on paper, A3. 2020.</p></figcaption></figure>
-<!-- ARTWORK 04: plaster cast head.jpg -->
+<!-- ARTWORK 04: place images/artwork-04.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 <figure class="artwork" data-category="graphite">
 <button class="media-preview" type="button" disabled aria-label="View Plaster Cast Head">
-<img src="./plaster%20cast%20head.jpg" alt="Plaster Cast Head" loading="lazy" decoding="async" hidden>
+<img src="plaster cast head.jpg" alt="Plaster Cast Head" loading="lazy" decoding="async" hidden>
 <span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 04</strong><small>Image forthcoming</small></span>
 <span class="view-label" aria-hidden="true">View image ↗</span></button>
 <figcaption><div class="work-meta"><span>NO. 04 / graphite</span><span>2021</span></div><h3>Plaster Cast Head</h3><p>Plaster cast head. Graphite pencil (2H, HB, 2B, Sonet) on paper, A3. 2021.</p></figcaption></figure>
-<!-- ARTWORK 05: voltaire.jpg -->
+<!-- ARTWORK 05: place images/artwork-05.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 <figure class="artwork" data-category="graphite">
 <button class="media-preview" type="button" disabled aria-label="View Voltaire in Profile">
-<img src="./voltaire.jpg" alt="Voltaire in Profile" loading="lazy" decoding="async" hidden>
+<img src="voltaire.jpg" alt="Voltaire in Profile" loading="lazy" decoding="async" hidden>
 <span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 05</strong><small>Image forthcoming</small></span>
 <span class="view-label" aria-hidden="true">View image ↗</span></button>
 <figcaption><div class="work-meta"><span>NO. 05 / graphite</span><span>2023</span></div><h3>Voltaire in Profile</h3><p>Plaster cast head of Voltaire, profile view. Graphite pencil (2H, HB, 2B, Sonet) on paper, A3. 2023.</p></figcaption></figure>
-<!-- ARTWORK 06: double portrait.jpg -->
+<!-- ARTWORK 06: place images/artwork-06.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 <figure class="artwork" data-category="graphite">
 <button class="media-preview" type="button" disabled aria-label="View Double Portrait">
-<img src="./double%20portrait.jpg" alt="Double Portrait" loading="lazy" decoding="async" hidden>
+<img src="double portrait.jpg" alt="Double Portrait" loading="lazy" decoding="async" hidden>
 <span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 06</strong><small>Image forthcoming</small></span>
 <span class="view-label" aria-hidden="true">View image ↗</span></button>
 <figcaption><div class="work-meta"><span>NO. 06 / graphite</span><span>2023</span></div><h3>Double Portrait</h3><p>Double portrait. Graphite pencil (2H, HB, 2B, 4B, Sonet) on paper, A3. 2023.</p></figcaption></figure>
-<!-- ARTWORK 07: he admires.jpg -->
+<!-- ARTWORK 07: place images/artwork-07.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 <figure class="artwork" data-category="illustration">
 <button class="media-preview" type="button" disabled aria-label="View He Admires the Fireworks. She Admires Him">
-<img src="./he%20admires.jpg" alt="He Admires the Fireworks. She Admires Him" loading="lazy" decoding="async" hidden>
+<img src="he admires.jpg" alt="He Admires the Fireworks. She Admires Him" loading="lazy" decoding="async" hidden>
 <span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 07</strong><small>Image forthcoming</small></span>
 <span class="view-label" aria-hidden="true">View image ↗</span></button>
 <figcaption><div class="work-meta"><span>NO. 07 / illustration</span><span>2026</span></div><h3>He Admires the Fireworks. She Admires Him</h3><p>Illustration: &quot;He admires the fireworks. She admires him&quot; (Graphite pencil HB / 03, 05, 08 Uni pin fineliner) on paper, A5. 2026.</p></figcaption></figure>
-<!-- ARTWORK 08: cropped composition.jpg -->
-<figure class="artwork" data-category="graphite">
-<button class="media-preview" type="button" disabled aria-label="View Cropped Composition">
-<img src="./cropped%20composition.jpg" alt="Cropped Composition" loading="lazy" decoding="async" hidden>
-<span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 08</strong><small>Image forthcoming</small></span>
-<span class="view-label" aria-hidden="true">View image ↗</span></button>
-<figcaption><div class="work-meta"><span>NO. 08 / graphite</span><span>—</span></div><h3>Cropped Composition</h3><p>Cropped composition study.</p></figcaption></figure>
+<!-- ARTWORK 08: place images/artwork-08.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 
-<!-- ARTWORK 09: a night.jpg -->
+<!-- ARTWORK 09: place images/artwork-09.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 <figure class="artwork" data-category="illustration">
 <button class="media-preview" type="button" disabled aria-label="View A Night Meeting in the City">
-<img src="./a%20night.jpg" alt="A Night Meeting in the City" loading="lazy" decoding="async" hidden>
+<img src="a night.jpg" alt="A Night Meeting in the City" loading="lazy" decoding="async" hidden>
 <span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 09</strong><small>Image forthcoming</small></span>
 <span class="view-label" aria-hidden="true">View image ↗</span></button>
 <figcaption><div class="work-meta"><span>NO. 09 / illustration</span><span>2026</span></div><h3>A Night Meeting in the City</h3><p>Illustration: &quot;A Night Meeting in the City&quot; (Graphite pencil HB / 03, 05, 08 Uni pin fineliner) on paper, A5. 2026.</p></figcaption></figure>
-<!-- ARTWORK 10: reunion.jpg -->
+<!-- ARTWORK 10: place images/artwork-10.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 <figure class="artwork" data-category="illustration">
 <button class="media-preview" type="button" disabled aria-label="View Reunion After the Breakup">
-<img src="./reunion.jpg" alt="Reunion After the Breakup" loading="lazy" decoding="async" hidden>
+<img src="reunion.jpg" alt="Reunion After the Breakup" loading="lazy" decoding="async" hidden>
 <span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 10</strong><small>Image forthcoming</small></span>
 <span class="view-label" aria-hidden="true">View image ↗</span></button>
 <figcaption><div class="work-meta"><span>NO. 10 / illustration</span><span>2026</span></div><h3>Reunion After the Breakup</h3><p>Illustration: &quot;Reunion After the Breakup&quot; (Graphite pencil HB / 03, 05, 08 Uni pin fineliner) on paper, A5. 2026.</p></figcaption></figure>
-<!-- ARTWORK 11: apples.jpg -->
+<!-- ARTWORK 11: place images/artwork-11.jpg beside this HTML's images folder; change src if using PNG/WebP. -->
 <figure class="artwork" data-category="painting">
 <button class="media-preview" type="button" disabled aria-label="View Still Life with Apples">
-<img src="./apples.jpg" alt="Still Life with Apples" loading="lazy" decoding="async" hidden>
+<img src="apples.jpg" alt="Still Life with Apples" loading="lazy" decoding="async" hidden>
 <span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Artwork 11</strong><small>Image forthcoming</small></span>
 <span class="view-label" aria-hidden="true">View image ↗</span></button>
 <figcaption><div class="work-meta"><span>NO. 11 / painting</span><span>2024</span></div><h3>Still Life with Apples</h3><p>&quot;Still Life with Apples&quot;. Oil on canvas (&quot;Nevskaya Palitra&quot;), size 30 × 40. 2024.</p></figcaption></figure></div></div></section>
 <section class="light" id="certificates"><div class="container">
 <div class="section-label">04 / Achievements &amp; Supporting Documents</div><h2 class="section-title">Certificates &amp; Recognition</h2>
-<p class="section-intro">Open the original PDF documents below. PDF files are linked as documents rather than placed in image tags, which cannot display PDFs as pictures.</p>
-<div class="gallery">
-<article class="certificate"><div class="pdf-preview"><span class="pdf-badge" aria-hidden="true">PDF</span><p>Regional design achievement</p><a href="./designer.pdf" target="_blank" rel="noopener">Open PDF ↗</a></div><div class="cert-info"><small>Design achievement</small><h3>Regional Design Competition — First Place</h3><p>File: designer.pdf</p></div></article>
-<article class="certificate"><div class="pdf-preview"><span class="pdf-badge" aria-hidden="true">PDF</span><p>Supporting document 01</p><a href="./aziza1.pdf" target="_blank" rel="noopener">Open PDF ↗</a></div><div class="cert-info"><small>Supporting document</small><h3>Aziza 1</h3><p>File: aziza1.pdf</p></div></article>
-<article class="certificate"><div class="pdf-preview"><span class="pdf-badge" aria-hidden="true">PDF</span><p>Supporting document 02</p><a href="./aziza3.pdf" target="_blank" rel="noopener">Open PDF ↗</a></div><div class="cert-info"><small>Supporting document</small><h3>Aziza 3</h3><p>File: aziza3.pdf</p></div></article>
-<article class="certificate"><div class="pdf-preview"><span class="pdf-badge" aria-hidden="true">PDF</span><p>Supporting document 03</p><a href="./aziza4.pdf" target="_blank" rel="noopener">Open PDF ↗</a></div><div class="cert-info"><small>Supporting document</small><h3>Aziza 4</h3><p>File: aziza4.pdf</p></div></article>
-<article class="certificate"><div class="pdf-preview"><span class="pdf-badge" aria-hidden="true">PDF</span><p>Supporting document 04</p><a href="./aziza5.pdf" target="_blank" rel="noopener">Open PDF ↗</a></div><div class="cert-info"><small>Supporting document</small><h3>Aziza 5</h3><p>File: aziza5.pdf</p></div></article>
-<article class="certificate"><div class="pdf-preview"><span class="pdf-badge" aria-hidden="true">PDF</span><p>Supporting document 05</p><a href="./aziza6.pdf" target="_blank" rel="noopener">Open PDF ↗</a></div><div class="cert-info"><small>Supporting document</small><h3>Aziza 6</h3><p>File: aziza6.pdf</p></div></article>
-</div></div></section>
+<p class="section-intro">Recognition in design, art, and class leadership. Certificate images will be added to the spaces below.</p>
+<div class="gallery"><article class="certificate">
+<button class="media-preview" type="button" disabled aria-label="View Regional Design Competition — First Place">
+<img src="designer.pdf" alt="Regional Design Competition — First Place" loading="lazy" decoding="async" hidden>
+<span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Certificate 01</strong><small>Image forthcoming</small></span>
+<span class="view-label" aria-hidden="true">View image ↗</span></button>
+<div class="cert-info"><small>Design achievement</small><h3>Regional Design Competition — First Place</h3><p>First place in designing at the regional stage.</p></div></article>
+<article class="certificate">
+<button class="media-preview" type="button" disabled aria-label="View Class Leadership Certificate">
+<img src="images/certificate-02.jpg" alt="Class Leadership Certificate" loading="lazy" decoding="async" hidden>
+<span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Certificate 02</strong><small>Image forthcoming</small></span>
+<span class="view-label" aria-hidden="true">View image ↗</span></button>
+<div class="cert-info"><small>Leadership</small><h3>Class Leadership Certificate</h3><p>Certificate recognizing her role as class leader.</p></div></article>
+<article class="certificate">
+<button class="media-preview" type="button" disabled aria-label="View Online Art Certificate">
+<img src="images/certificate-03.jpg" alt="Online Art Certificate" loading="lazy" decoding="async" hidden>
+<span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Certificate 03</strong><small>Image forthcoming</small></span>
+<span class="view-label" aria-hidden="true">View image ↗</span></button>
+<div class="cert-info"><small>Art certificate</small><h3>Online Art Certificate</h3><p>Online certificate relating to pictures and art.</p></div></article>
+<article class="certificate">
+<button class="media-preview" type="button" disabled aria-label="View Best Historical Picture — Nomination">
+<img src="images/certificate-04.jpg" alt="Best Historical Picture — Nomination" loading="lazy" decoding="async" hidden>
+<span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Certificate 04</strong><small>Image forthcoming</small></span>
+<span class="view-label" aria-hidden="true">View image ↗</span></button>
+<div class="cert-info"><small>Historical art</small><h3>Best Historical Picture — Nomination</h3><p>Certificate for the “Best Historical Picture” nomination.</p></div></article>
+<article class="certificate">
+<button class="media-preview" type="button" disabled aria-label="View “Yuksak ma’naviyatli avlod” Festival">
+<img src="images/certificate-05.jpg" alt="“Yuksak ma’naviyatli avlod” Festival" loading="lazy" decoding="async" hidden>
+<span class="media-placeholder"><span class="frame-mark" aria-hidden="true"></span><strong>Certificate 05</strong><small>Image forthcoming</small></span>
+<span class="view-label" aria-hidden="true">View image ↗</span></button>
+<div class="cert-info"><small>Festival recognition</small><h3>“Yuksak ma’naviyatli avlod” Festival</h3><p>Certificate for the “Best Artist” nomination.</p></div></article></div></div></section>
 <section class="contact" id="contact"><div class="container">
 <div class="section-label">05 / Get in Touch</div><h2 class="section-title">Let’s Connect</h2>
 <p>Thank you for exploring my art portfolio. For inquiries about my artwork or GKS application, please use the contact details when available below.</p>
@@ -228,7 +241,7 @@ viewer.addEventListener('close', () => {
 });
 
 // Missing files keep placeholders; available images enable the full-size viewer.
-document.querySelectorAll('.artwork .media-preview').forEach(button => {
+document.querySelectorAll('.media-preview').forEach(button => {
   const image = button.querySelector('img');
   const placeholder = button.querySelector('.media-placeholder');
   const update = () => {
